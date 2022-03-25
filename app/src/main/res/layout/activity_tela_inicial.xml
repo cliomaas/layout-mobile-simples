@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbarStyle="insideOverlay">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3E97EA9A"
+        tools:context=".TelaInicial">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:background="@drawable/shape_banner"
+            android:backgroundTint="#92E3A9"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="382dp"
+                android:layout_height="144dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bebasneue_bold"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Oferta! Ganhe + 3 pontos por reciclagem hoje"
+                android:textColor="#385A42"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_eco_conscious_pana" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_bemVinda"
+            android:layout_width="203dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bebasneue_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#7494EA"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_banner_white"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_bemVinda">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="96dp"
+                android:layout_height="106dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/baseline_emoji_events_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bebasneue_bold"
+                android:gravity="center_horizontal"
+                android:text="VOCÊ POSSUI"
+                android:textColor="#385A42"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_color"
+                android:backgroundTint="#92E3A9"
+                android:fontFamily="@font/bebasneue_bold"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="96 PONTOS"
+                android:textColor="@color/white"
+                android:textSize="72sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/acoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bebasneue_bold"
+            android:gravity="center_horizontal"
+            android:text="AÇÕES ESG"
+            android:textColor="#385A42"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acoes">
+
+            <LinearLayout
+                android:id="@+id/cardReciclagem"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_banner"
+                android:backgroundTint="#7494ea"
+                android:gravity="clip_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/texto_reciclagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneue_book"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Reciclagem"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_recycling_black_24dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/cardPlantio"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_banner"
+                android:backgroundTint="#7494ea"
+                android:defaultFocusHighlightEnabled="false"
+                android:gravity="clip_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_plant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneue_book"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="PLANTIO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/img_plant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_nature_people_white_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
